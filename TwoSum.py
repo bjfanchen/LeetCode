@@ -11,6 +11,9 @@ You may assume that each input would have exactly one solution, and you may not 
 1.两次遍历，每两个数都相加一次，再比较. 可行，但时间复杂度太高，约为O(n^2)
 2.利用HashTable来实现，一次遍历list，迭代list元素将其添加进HashTable中，
   同时查找（通过in关键字来实现）table中已有元素与当前元素之和是否为target，查找成功即返回
+
+时间复杂度：O(n)
+空间复杂度：
 """
 
 
@@ -29,3 +32,5 @@ class Solution:
                 return [d[m], i]
             else:
                 d[n] = i
+
+

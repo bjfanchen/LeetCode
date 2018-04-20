@@ -19,6 +19,9 @@ i is then incremented and we repeat the same process again until j reaches the e
 当i执行到list最后一个元素，循环结束，newTail+1即是去重list元素个数
 注意：1.去重后list大小不变，区别在于前（newTail+1）个元素是不重复的，后面的元素与原list相同
      2.remove实现不可行，原因在于remove掉重复元素后，list变短，原来指针指向的元素变化，可能会跳过某些元素的去重比较
+
+时间复杂度：O(n)
+空间复杂度：O(1)
 """
 
 
@@ -44,9 +47,3 @@ class Solution:
                 nums[newTail] = nums[i]
 
         return newTail + 1
-
-
-"""
-时间复杂度：O(n)
-空间复杂度：O(1)
-"""
