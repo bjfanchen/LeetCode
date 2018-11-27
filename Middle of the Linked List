@@ -10,12 +10,11 @@ class Solution(object):
         :type head: ListNode
         :rtype: ListNode
         """
-        if not head.next: return head
         fast = head
         slow = head
         while fast and fast.next:
                 slow = slow.next
                 fast = fast.next.next
-        
+        # 退出循环有两种可能：fast为空或fast.next为空，分别对应总长度为偶数和奇数的情况
         return slow
-        
+   
