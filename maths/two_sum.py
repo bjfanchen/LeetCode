@@ -34,3 +34,8 @@ class Solution:
                 d[n] = i
 
 
+sol = Solution()
+print(sol.twoSum([1, 23, 4], 5))
+
+
+
